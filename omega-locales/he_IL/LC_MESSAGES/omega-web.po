@@ -3,15 +3,16 @@ msgstr ""
 "Project-Id-Version: SwitchyOmega 2.3.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-13 10:29+0000\n"
-"PO-Revision-Date: 2015-02-17 07:02+0200\n"
+"PO-Revision-Date: 2018-06-13 01:52+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
-"Language: en_GB\n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 3.0.1\n"
 
 msgid "appNameShort"
 msgstr ""
@@ -445,6 +446,9 @@ msgstr ""
 msgid "options_proxy_auth"
 msgstr ""
 
+msgid "options_proxy_authNotSupported"
+msgstr ""
+
 msgid "options_proxy_authAllWarningPac"
 msgstr ""
 
@@ -725,6 +729,12 @@ msgid "options_proxyAuthUsername"
 msgstr ""
 
 msgid "options_proxyAuthPassword"
+msgstr ""
+
+msgid "options_proxyAuthShowPassword"
+msgstr ""
+
+msgid "options_proxyAuthHidePassword"
 msgstr ""
 
 msgid "options_proxyAuthNone"

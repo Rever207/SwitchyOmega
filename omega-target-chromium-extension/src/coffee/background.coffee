@@ -8,7 +8,7 @@ Log = OmegaTargetCurrent.Log
 _writeLogToLocalStorage = (content) ->
   try
     localStorage['log'] += content
-  catch
+  catch _
     # Maybe we have reached our limit here. See #1288. Try trimming it.
     localStorage['log'] = content
 
@@ -179,7 +179,10 @@ if chrome?.storage?.sync or browser?.storage?.sync
     sync.enabled = false
   sync.transformValue = OmegaTargetCurrent.Options.transformValueForSync
 
-options = new OmegaTargetCurrent.Options(null, storage, state, Log, sync)
+proxyImpl = OmegaTargetCurrent.proxy.getProxyImpl(Log)
+state.set({proxyImplFeatures: proxyImpl.features})
+options = new OmegaTargetCurrent.Options(null, storage, state, Log, sync,
+  proxyImpl)
 options.externalApi = new OmegaTargetCurrent.ExternalApi(options)
 options.externalApi.listen()
 
@@ -218,7 +221,7 @@ options._inspect = new OmegaTargetCurrent.Inspect (url, tab) ->
 options.setProxyNotControllable(null)
 timeout = null
 
-options.watchProxyChange (details) ->
+proxyImpl.watchProxyChange (details) ->
   return if options.externalApi.disabled
   return unless details
   notControllableBefore = options.proxyNotControllable()
@@ -250,10 +253,12 @@ options.watchProxyChange (details) ->
   clearTimeout(timeout) if timeout?
   parsed = null
   timeout = setTimeout (->
-    options.setExternalProfile(parsed, {noRevert: noRevert, internal: internal})
+    if parsed
+      options.setExternalProfile(parsed,
+        {noRevert: noRevert, internal: internal})
   ), 500
 
-  parsed = options.parseExternalProfile(details)
+  parsed = proxyImpl.parseExternalProfile(details, options._options)
   return
 
 external = false

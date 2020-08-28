@@ -3,60 +3,59 @@ msgstr ""
 "Project-Id-Version: SwitchyOmega 2.3.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-13 10:29+0000\n"
-"PO-Revision-Date: 2017-02-07 11:48+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
-"Language-Team: Dutch "
-"<https://hosted.weblate.org/projects/switchyomega/main/nl/>\n"
-"Language: nl\n"
+"PO-Revision-Date: 2019-12-05 16:05+0000\n"
+"Last-Translator: Cátia Cristina Nogueira Viegas <ccn_viegas@hotmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/switchyomega/"
+"main/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.11\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.10-dev\n"
 
+#, fuzzy
 msgid "appNameShort"
 msgstr "SwitchyOmega"
 
 msgid "manifest_app_name"
-msgstr "Proxy SwitchyOmega"
+msgstr ""
 
 msgid "manifest_app_description"
 msgstr ""
-"Beheer en schakel tussen meerdere proxies tegelijkertijd, gemakkelijk en "
-"snel."
 
 msgid "manifest_icon_default_title"
-msgstr "Bezig met laden…"
+msgstr ""
 
 msgid "upgrade_profile_auto"
-msgstr "Automatisch schakelen"
+msgstr ""
 
 msgid "profile_direct"
-msgstr "[Direct]"
+msgstr ""
 
 msgid "profile_system"
-msgstr "[Systeemproxy]"
+msgstr ""
 
 msgid "condition_HostWildcardCondition"
-msgstr "Host-jokerteken"
+msgstr ""
 
 msgid "condition_help_HostWildcardCondition"
 msgstr ""
 
 msgid "condition_HostRegexCondition"
-msgstr "Host-regex"
+msgstr ""
 
 msgid "condition_help_HostRegexCondition"
 msgstr ""
 
 msgid "condition_HostLevelsCondition"
-msgstr "Host-niveaus"
+msgstr ""
 
 msgid "condition_help_HostLevelsCondition"
 msgstr ""
 
 msgid "condition_IpCondition"
-msgstr "IP-letters"
+msgstr ""
 
 msgid "condition_help_IpCondition"
 msgstr ""
@@ -104,7 +103,7 @@ msgid "condition_alert_fullUrlLimitation"
 msgstr ""
 
 msgid "condition_alert_fullUrlLimitationLink"
-msgstr "https://github.com/FelisCatus/SwitchyOmega/wiki/Chromium-Full-URL-Limitation"
+msgstr ""
 
 msgid "condition_group_default"
 msgstr ""
@@ -164,7 +163,7 @@ msgid "options_title"
 msgstr ""
 
 msgid "options_experimental_badge"
-msgstr "α"
+msgstr ""
 
 msgid "options_navHeader_setting"
 msgstr ""
@@ -209,7 +208,7 @@ msgid "options_showInspectMenu"
 msgstr ""
 
 msgid "options_addConditionsToBottom"
-msgstr "Put new conditions added using the popup to the bottom of the list."
+msgstr ""
 
 msgid "options_group_keyboardShortcut"
 msgstr ""
@@ -260,38 +259,22 @@ msgid "options_revertProxyChanges"
 msgstr ""
 
 msgid "options_group_conflicts"
-msgstr "Conflicts"
+msgstr ""
 
 msgid "options_conflicts_introduction"
 msgstr ""
-"Sometimes, other apps will also try to control the proxy settings, resulting "
-"in conflicts. Note that ad blockers and other extensions may also use proxy "
-"settings under the hood. Such conflicts cannot be avoided due to how the "
-"browser works."
 
 msgid "options_conflicts_lowerPriority"
 msgstr ""
-"A red badge like this on the SwitchyOmega icon indicates that another app has "
-"higher priority so SwitchyOmega cannot control the settings. Please try to "
-"uninstall SwitchyOmega and reinstall, which should raise SwitchyOmega's "
-"priority. If you still see conflicts after reinstallation, please consider "
-"removing the other app causing the conflict."
 
 msgid "options_conflicts_higherPriority"
 msgstr ""
-"If SwitchyOmega has higher priority, you can give the control back to other "
-"apps or system settings by selecting $SYSTEMPROFILE$ in the popup menu."
 
 msgid "options_showExternalProfile"
-msgstr "Show popup menu item to import proxy settings from other apps."
+msgstr ""
 
 msgid "options_showExternalProfileHelp"
 msgstr ""
-"When $SYSTEMPROFILE$ is selected, you can import the effective proxy settings "
-"from other apps by selecting $EXTERNALPROFILE$ on the popup menu. "
-"The settings will be imported as a profile using the name you provide. "
-"Please note that the imported profile is a snapshot and will not reflect "
-"any changes from the source app thereafter."
 
 msgid "options_group_networkRequests"
 msgstr ""
@@ -465,9 +448,7 @@ msgid "options_proxy_auth"
 msgstr ""
 
 msgid "options_proxy_authNotSupported"
-msgstr "Your browser DOES NOT support $PROTOCOLDISP$ proxy authentication! "
-"Please do not report this issue to SwitchyOmega. Contact the support for "
-"your browser instead."
+msgstr ""
 
 msgid "options_proxy_authAllWarningPac"
 msgstr ""
@@ -602,7 +583,7 @@ msgid "options_cloneRule"
 msgstr ""
 
 msgid "options_ruleNote"
-msgstr "Note"
+msgstr ""
 
 msgid "options_switchAttachedProfileInCondition"
 msgstr ""
@@ -752,10 +733,10 @@ msgid "options_proxyAuthPassword"
 msgstr ""
 
 msgid "options_proxyAuthShowPassword"
-msgstr "Show password"
+msgstr ""
 
 msgid "options_proxyAuthHidePassword"
-msgstr "Hide password"
+msgstr ""
 
 msgid "options_proxyAuthNone"
 msgstr ""
@@ -986,7 +967,7 @@ msgid "options_resultProfileForSelectedDomains"
 msgstr ""
 
 msgid "options_pac_profile_unsupported_moz"
-msgstr "PAC Profiles WILL NOT work in Mozilla Firefox due to technical limitations!"
+msgstr ""
 
 msgid "popup_issueTemplate"
 msgstr ""
@@ -1055,33 +1036,31 @@ msgid "contextMenu_enableQuickSwitch"
 msgstr ""
 
 msgid "about_title"
-msgstr "About"
+msgstr ""
 
 msgid "about_app_description"
-msgstr "A proxy configuration tool"
+msgstr ""
 
 msgid "about_version"
-msgstr "Version $VERSION$"
+msgstr ""
 
 msgid "about_experimental_warning_moz"
-msgstr "Mozilla Firefox support is highly experimental! If you encounter issues, please report using the buttons below."
+msgstr ""
 
 msgid "about_disclaimer_networkService"
-msgstr "SwitchyOmega does not provide proxies, VPNs, or other network services."
+msgstr ""
 
 msgid "about_disclaimer_privacy"
-msgstr "SwitchyOmega does not track you or insert ads into webpages. Please see"
-" our <a href='https://github.com/FelisCatus/SwitchyOmega/wiki/Privacy#english'>privacy policy</a>."
+msgstr ""
 
 msgid "about_help"
-msgstr "Other questions? Need help with using SwitchyOmega? Please see our "
-"<a href='https://github.com/FelisCatus/SwitchyOmega/wiki/FAQ'>FAQ</a>."
+msgstr ""
 
 msgid "about_copyright"
-msgstr "Copyright 2012-2017 <a href='https://github.com/FelisCatus/SwitchyOmega/blob/master/AUTHORS'>The SwitchyOmega Authors</a>. All rights reserved."
+msgstr ""
 
 msgid "about_credits"
-msgstr "SwitchyOmega is made possible by the <a href='https://github.com/FelisCatus/SwitchyOmega'>SwitchyOmega</a> open source project and other <a href='https://github.com/FelisCatus/SwitchyOmega/blob/master/AUTHORS'>open source software</a>."
+msgstr ""
 
 msgid "about_license"
-msgstr "SwitchyOmega is <a href='https://www.gnu.org/philosophy/free-sw.en.html'>free software</a> licensed under <a href='https://www.gnu.org/licenses/gpl.html'>GNU General Public License</a> Version 3 or later."
+msgstr ""
